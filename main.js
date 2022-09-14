@@ -43,6 +43,7 @@ let TVFacts = TVC[Math.floor(Math.random() * TVC.length)];
 let list1 = document.querySelector('#list');
 const select1 = document.querySelector('#select');
 const response1 = document.querySelector('#response');
+const pic1 = document.querySelector('#catpicture');
 
 select1.addEventListener('click', evt => {
     if (list1.value==='Abyssinian') {response1.textContent=AbyssFacts};
@@ -62,3 +63,6 @@ select1.addEventListener('click', evt => {
     if (list1.value==='TurkishAngora') {response1.textContent=TAFacts};
     if (list1.value==='TurkishVan') {response1.textContent=TVFacts};
 })
+
+//cat pictures
+

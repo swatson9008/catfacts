@@ -1,0 +1,31 @@
+
+body {
+    background-color: lightskyblue;
+    background-image: url("bgpic.png");
+    background-repeat: repeat round;
+}
+
+.catdisplay {
+    display:flex;
+    /*border: 2px solid red;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    max-width: fit-content;
+    background-color: #ffe9e9;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 5px 5px rgb(124, 117, 117);
+    
+}
+
+#select {
+    margin-top: 10px;
+    
+}
+
+h1 {
+    background-color: white; 
+    max-width: fit-content;
+}
