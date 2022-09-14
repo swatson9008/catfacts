@@ -3,16 +3,35 @@
     <head>
         <meta charset="UTF=8">
         <title>Cat Facts</title>
+        
     </head>
 <body>
-   Type in a cat breed here to receive a cat fact.<p></p>
 
 
-<form>
-  <label for="cbreed">Cat Breed</label><br>
-  <input type="text" id="fname" name="cbreed"><br>
-  <input type="submit" value="Submit">
-  </form>
-  <scirpt src="main.js"></scirpt>
+   <div class="module">
+    <h3>Select a cat breed here to receive a cat fact.</h3>
+    
+    <select name="list" id="list">
+      <option value="Starter">Pick a Cat Breed</option>
+      <option value="Abyssinian">Abyssinian Cat</option>
+      <option value="AmericanShorthair">American Shorthair Cat</option>
+      <option value="Bengal">Bengal Cat</option>
+      <option value="Himalayan">Himalayan Cat</option>
+      <option value="MaineCoon">Maine Coon Cat</option>
+      <option value="Manx">Manx Cat</option>
+      <option value="NorwegianForest">Norwegian Forest Cat</option>
+      <option value="Persian">Persian Cat</option>
+      <option value="Ragamuffin">Ragamuffin Cat</option>
+      <option value="Ragdoll">Ragdoll Cat</option>
+      <option value="RussianBlue">Russian Blue Cat</option>
+      <option value="ScottishFold">Scottish Fold Cat</option>
+      <option value="Siamese">Siamese Cat</option>
+      <option value="Sphynx">Sphynx Cat</option>
+      <option value="TurkishAngora">Turkish Angora Cat</option>
+      <option value="TurkishVan">Turkish Van Cat</option>
+    </select>
+    <input id="select" type ="button" value="select"><p></p>
+    <div id="response"></div>
+  <script src="main.js" defer></script>
 </body>
 </html>
