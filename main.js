@@ -23,20 +23,42 @@ const TVC = ["Turkish Van has long, cashmere-like, single coat that is waterproo
 // functions
 
 let AbyssFacts = AbyssinianC[Math.floor(Math.random() * AbyssinianC.length)];
-console.log(show);
+let ASCFacts = ASC[Math.floor(Math.random() * ASC.length)];
+let BengalFacts = BengalC[Math.floor(Math.random() * BengalC.length)];
+let HimalayanFacts = HimalayanC[Math.floor(Math.random() * HimalayanC.length)];
+let MaineCoonFacts = MaineCC[Math.floor(Math.random() * MaineCC.length)];
+let ManxFacts = ManxC[Math.floor(Math.random() * ManxC.length)];
+let NFFacts = NFC[Math.floor(Math.random() * NFC.length)];
+let PCFacts = PC[Math.floor(Math.random() * PC.length)];
+let RagamuffinFacts = RagamuffinC[Math.floor(Math.random() * RagamuffinC.length)];
+let RagdollFacts = RagdollC[Math.floor(Math.random() * RagdollC.length)];
+let RBFacts = RBC[Math.floor(Math.random() * RBC.length)];
+let SFFacts = SFC[Math.floor(Math.random() * SFC.length)];
+let SiameseFacts = SiameseC[Math.floor(Math.random() * SiameseC.length)];
+let SphynxFacts = SphynxC[Math.floor(Math.random() * SphynxC.length)];
+let TAFacts = TAC[Math.floor(Math.random() * TAC.length)];
+let TVFacts = TVC[Math.floor(Math.random() * TVC.length)];
+//console.log(AbyssFacts);
 
+let list1 = document.querySelector('#list');
+const select1 = document.querySelector('#select');
+const response1 = document.querySelector('#response');
 
-// cat submit box
-
-document.querySelectorAll("submit").addEventListner("click", catfact);
-
-function catfact (catname) {
-
-    switch(catname) {
-        case "Abyssinian":
-        catname = AbyssFacts
-        console.log(show)
-        break;
-    }
-
-}
+select1.addEventListener('click', evt => {
+    if (list1.value==='Abyssinian') {response1.textContent=AbyssFacts};
+    if (list1.value==='AmericanShorthair') {response1.textContent=ASCFacts};
+    if (list1.value==='Bengal') {response1.textContent=BengalFacts};
+    if (list1.value==='Himalayan') {response1.textContent=HimalayanFacts};
+    if (list1.value==='MaineCoon') {response1.textContent=MaineCoonFacts};
+    if (list1.value==='Manx') {response1.textContent=ManxFacts};
+    if (list1.value==='NorwegianForest') {response1.textContent=NFFacts};
+    if (list1.value==='Persian') {response1.textContent=PCFacts};
+    if (list1.value==='Ragamuffin') {response1.textContent=RagamuffinFacts};
+    if (list1.value==='Ragdoll') {response1.textContent=RagdollFacts};
+    if (list1.value==='RussianBlue') {response1.textContent=RBFacts};
+    if (list1.value==='ScottishFold') {response1.textContent=SFFacts};
+    if (list1.value==='Siamese') {response1.textContent=SiameseFacts};
+    if (list1.value==='Sphynx') {response1.textContent=SphynxFacts};
+    if (list1.value==='TurkishAngora') {response1.textContent=TAFacts};
+    if (list1.value==='TurkishVan') {response1.textContent=TVFacts};
+})
